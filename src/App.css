@@ -1,0 +1,96 @@
+/* App.css */
+.app {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 1s ease;
+  padding: 20px;
+}
+
+#quote-box {
+  width: 600px;
+  min-height: 250px;
+  padding: 40px 50px;
+  background-color: white;
+  border-radius: 5px;
+  transition: color 1s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#text {
+  font-size: 1.75rem;
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#author {
+  font-size: 1rem;
+  text-align: right;
+  margin-bottom: 30px;
+  min-height: 24px;
+}
+
+
+button, a {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  font-size: 0.9em;
+  min-width: 120px;
+  text-align: center;
+  transition: opacity 0.3s ease;
+}
+
+button:hover, a:hover {
+  opacity: 0.9;
+}
+
+a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-links {
+  display: flex;
+  gap: 1px; /* Adjust as needed (try 4px or 6px if still too far) */
+}
+
+.social-links a {
+  padding: 0;
+  margin: 0;
+  transition: transform 0.2s ease;
+}
+
+
+.social-links a:hover {
+  transform: translateY(-2px);
+  z-index: 1; /* Bring hovered icon to front */
+}
+
+.social-links a:first-child {
+  margin-left: 0;
+}
+
+.social-links a:last-child {
+  margin-right: 0;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between; /* Changed from space-between */
+  align-items: center;
+  gap: 15px;
+}
+
